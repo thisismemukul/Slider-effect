@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fredoka One', cursive;
+}
+html{
+	font-size: 52px;
+	background: #181818;
+}
+h1{
+	color: #fcfcfc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+h1:before{
+	content: '~thisismewebdev~';
+	width: 100%;
+	color: #33e1ed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 3.2px solid #33e1ed;
+	animation: slide 3s linear infinite;
+	-webkit-animation: slide 3s linear infinite;
+	overflow: hidden;
+}
+@keyframes slide{
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 100%;
+	}
+	100%{
+		width: 0%;
+	}
+}
